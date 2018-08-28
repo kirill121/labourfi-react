@@ -43,7 +43,7 @@ router.post('/registerEmployer', (req, res) => {
 });
 
 
-router.post('/login', (req, res) => {
+router.post('/loginem', (req, res) => {
 	const { errors, isValid } = validateEmployerLogin(req.body);
 
 	if(!isValid) {
@@ -81,7 +81,14 @@ router.post('/login', (req, res) => {
 					}
 				})	
 		})
-});				
+});
+
+router.get('/current', passport.authenticate('jwt', { session: false }), (req, res) => {
+	res.json({
+		id: req.user.id,
+		name: req.user.name
+	});
+});
 
 module.exports = router;
 
