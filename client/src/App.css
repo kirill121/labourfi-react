@@ -1,1 +1,24 @@
+img {
+	width: 100%;
+}
 
+.landing {
+	position: relative;
+	background: url('./img/construction.jpg');
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	margin-bottom: -50px;
+	margin-top: -24px;
+	z-index: -1;
+}
+
+#labourfi {
+	font-family: "Bradley Hand", cursive;
+}
+
+.navbar {
+	position: absolute;
+	top: 0px;
+	width: 100%;
+}

@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import LandingPage from './components/general/LandingPage';
+import Landingpage from './components/general/Landingpage';
+import Navbar from './components/general/Navbar';
+import Footer from './components/general/Footer';
 
 import './App.css';
 
@@ -10,7 +12,9 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <Route  exact path='/' component={ LandingPage } />
+          <Navbar />
+          <Route exact path='/' component={ Landingpage } />
+          <Footer />
         </div>
       </Router>
     );
