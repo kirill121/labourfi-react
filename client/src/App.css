@@ -10,15 +10,30 @@ img {
 	background-position: center;
 	margin-bottom: -50px;
 	margin-top: -24px;
-	z-index: -1;
 }
 
 #labourfi {
-	font-family: "Bradley Hand", cursive;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+#labourSign {
+	margin-top: 80px;
+	color: green;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 .navbar {
 	position: absolute;
 	top: 0px;
 	width: 100%;
+	z-index: 100;
+}
+
+#signature {
+	font-family: 'Source Sans Pro', sans-serif;
+	color: green;
+}
+
+#footer {
+	height: 26px;
 }
